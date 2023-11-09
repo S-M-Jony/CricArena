@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4gO-11-vR9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Matches View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LiveMatchesViewController" customModule="cricArena" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJC-98-gQZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFI-VS-FyC">
+                                        <rect key="frame" x="20" y="60" width="184.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livee" translatesAutoresizingMaskIntoConstraints="NO" id="VSF-6j-lXP">
+                                        <rect key="frame" x="314" y="50" width="80" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="FIC-Zh-V8A"/>
+                                            <constraint firstAttribute="height" constant="60" id="arc-Xp-0nn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1529411765" green="0.13725490200000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="06w-vD-q4H"/>
+                                    <constraint firstItem="wFI-VS-FyC" firstAttribute="top" secondItem="NJC-98-gQZ" secondAttribute="top" constant="60" id="Hg3-DC-MSk"/>
+                                    <constraint firstAttribute="trailing" secondItem="VSF-6j-lXP" secondAttribute="trailing" constant="20" id="IPa-oC-Onh"/>
+                                    <constraint firstItem="wFI-VS-FyC" firstAttribute="leading" secondItem="NJC-98-gQZ" secondAttribute="leading" constant="20" id="fIj-oV-dLz"/>
+                                    <constraint firstItem="VSF-6j-lXP" firstAttribute="top" secondItem="NJC-98-gQZ" secondAttribute="top" constant="50" id="tjp-VR-CEh"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nolive" translatesAutoresizingMaskIntoConstraints="NO" id="Cb9-4t-30N">
+                                <rect key="frame" x="87" y="290" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="h3i-Ct-a5s"/>
+                                    <constraint firstAttribute="height" constant="128" id="nCl-Nk-C4Z"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPO-DT-QUd">
+                                <rect key="frame" x="76" y="458" width="262" height="31"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.28235294119999998" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="No Live Match Available At This Time"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pPO-DT-QUd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2e5-P9-k0T"/>
+                            <constraint firstItem="Cb9-4t-30N" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GPO-oe-lSg"/>
+                            <constraint firstItem="NJC-98-gQZ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="I99-os-xux"/>
+                            <constraint firstItem="pPO-DT-QUd" firstAttribute="top" secondItem="Cb9-4t-30N" secondAttribute="bottom" constant="40" id="bWC-Kl-Cvx"/>
+                            <constraint firstItem="Cb9-4t-30N" firstAttribute="top" secondItem="NJC-98-gQZ" secondAttribute="bottom" constant="170" id="bs7-DE-wZ4"/>
+                            <constraint firstItem="NJC-98-gQZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fbg-TC-Rwj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NJC-98-gQZ" secondAttribute="trailing" id="gN6-mV-H2x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vKg-7q-owF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="73.660714285714278"/>
+        </scene>
+        <!--Live-->
+        <scene sceneID="fQz-qA-yaX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4gO-11-vR9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Live" image="antenna.radiowaves.left.and.right" catalog="system" id="eas-TB-2mm"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c90-xd-Uht">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="jbX-8Q-sYJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9b-uF-3Sh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="antenna.radiowaves.left.and.right" catalog="system" width="128" height="109"/>
+        <image name="livee" width="64" height="64"/>
+        <image name="nolive" width="50" height="50"/>
+    </resources>
+</document>
